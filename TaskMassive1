@@ -1,0 +1,30 @@
+package _day2.HomeWork;
+
+/**
+ * Created by Alexandr on 11.10.2016.
+ */
+public class TaskMassive1 {
+    public static void main(String[] args) {
+        //Найти минимальное и максимальное значения в массиве и вывести их на консоль
+
+        int mas[] = {45,5,55,1,230};
+        int min = mas[0];
+        int max = mas[0];
+
+        for (int index = 0; index < mas.length; index++){
+            if (mas[index] < min){
+                min = mas[index];
+            }
+        }
+        System.out.println("min = " + min);
+
+        for (int index = 0; index < mas.length; index++){
+            if (mas[index] > max){
+                max = mas[index];
+            }
+        }
+        System.out.println("max = " + max);
+
+
+    }
+}
